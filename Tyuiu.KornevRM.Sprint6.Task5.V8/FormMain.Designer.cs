@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.KornevRM.Sprint6.Task5.V8
 {
-    partial class FormMain
+    partial class FormMain_HNA
     {
         /// <summary>
         /// Required designer variable.
@@ -28,158 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_HNA));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.groupBoxOutput_PEI = new System.Windows.Forms.GroupBox();
-            this.dataGrid_PEI = new System.Windows.Forms.DataGridView();
-            this.groupBoxTask_PEI = new System.Windows.Forms.GroupBox();
-            this.buttonDone_PEI = new System.Windows.Forms.Button();
-            this.buttonOpen_PEI = new System.Windows.Forms.Button();
-            this.buttonInfo_PEI = new System.Windows.Forms.Button();
-            this.chartDiag_PEI = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBoxOutput_PEI.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_PEI)).BeginInit();
-            this.groupBoxTask_PEI.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDiag_PEI)).BeginInit();
+            this.DBox2Vivod_HNA = new System.Windows.Forms.GroupBox();
+            this.GBoxFon_HNA = new System.Windows.Forms.GroupBox();
+            this.But3Spavka_HNA = new System.Windows.Forms.Button();
+            this.But2Sohranit_HNA = new System.Windows.Forms.Button();
+            this.But1Vipolnit_HNA = new System.Windows.Forms.Button();
+            this.GBoxUslovie_HNA = new System.Windows.Forms.GroupBox();
+            this.Lib1Uslovie_HNA = new System.Windows.Forms.Label();
+            this.ChartTableGraf_HNA = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.DGridViewTable_HNA = new System.Windows.Forms.DataGridView();
+            this.ColumnX_HNA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DBox2Vivod_HNA.SuspendLayout();
+            this.GBoxFon_HNA.SuspendLayout();
+            this.GBoxUslovie_HNA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartTableGraf_HNA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGridViewTable_HNA)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBoxOutput_PEI
+            // DBox2Vivod_HNA
             // 
-            this.groupBoxOutput_PEI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBoxOutput_PEI.Controls.Add(this.dataGrid_PEI);
-            this.groupBoxOutput_PEI.Location = new System.Drawing.Point(12, 134);
-            this.groupBoxOutput_PEI.Name = "groupBoxOutput_PEI";
-            this.groupBoxOutput_PEI.Size = new System.Drawing.Size(138, 379);
-            this.groupBoxOutput_PEI.TabIndex = 1;
-            this.groupBoxOutput_PEI.TabStop = false;
-            this.groupBoxOutput_PEI.Text = "Вывод";
+            this.DBox2Vivod_HNA.Controls.Add(this.DGridViewTable_HNA);
+            this.DBox2Vivod_HNA.Dock = System.Windows.Forms.DockStyle.Left;
+            this.DBox2Vivod_HNA.Location = new System.Drawing.Point(0, 97);
+            this.DBox2Vivod_HNA.Name = "DBox2Vivod_HNA";
+            this.DBox2Vivod_HNA.Size = new System.Drawing.Size(200, 353);
+            this.DBox2Vivod_HNA.TabIndex = 7;
+            this.DBox2Vivod_HNA.TabStop = false;
+            this.DBox2Vivod_HNA.Text = "Вывод данных";
             // 
-            // dataGrid_PEI
+            // GBoxFon_HNA
             // 
-            this.dataGrid_PEI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.dataGrid_PEI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGrid_PEI.ColumnHeadersVisible = false;
-            this.dataGrid_PEI.Location = new System.Drawing.Point(6, 21);
-            this.dataGrid_PEI.Name = "dataGrid_PEI";
-            this.dataGrid_PEI.RowHeadersVisible = false;
-            this.dataGrid_PEI.RowHeadersWidth = 51;
-            this.dataGrid_PEI.RowTemplate.Height = 24;
-            this.dataGrid_PEI.Size = new System.Drawing.Size(126, 352);
-            this.dataGrid_PEI.TabIndex = 6;
+            this.GBoxFon_HNA.Controls.Add(this.But3Spavka_HNA);
+            this.GBoxFon_HNA.Controls.Add(this.But2Sohranit_HNA);
+            this.GBoxFon_HNA.Controls.Add(this.But1Vipolnit_HNA);
+            this.GBoxFon_HNA.Controls.Add(this.GBoxUslovie_HNA);
+            this.GBoxFon_HNA.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GBoxFon_HNA.Location = new System.Drawing.Point(0, 0);
+            this.GBoxFon_HNA.Name = "GBoxFon_HNA";
+            this.GBoxFon_HNA.Size = new System.Drawing.Size(800, 97);
+            this.GBoxFon_HNA.TabIndex = 6;
+            this.GBoxFon_HNA.TabStop = false;
             // 
-            // groupBoxTask_PEI
+            // But3Spavka_HNA
             // 
-            this.groupBoxTask_PEI.Controls.Add(this.textBox1);
-            this.groupBoxTask_PEI.Location = new System.Drawing.Point(12, 0);
-            this.groupBoxTask_PEI.Name = "groupBoxTask_PEI";
-            this.groupBoxTask_PEI.Size = new System.Drawing.Size(403, 123);
-            this.groupBoxTask_PEI.TabIndex = 2;
-            this.groupBoxTask_PEI.TabStop = false;
-            this.groupBoxTask_PEI.Text = "Условие";
+            this.But3Spavka_HNA.BackColor = System.Drawing.Color.DodgerBlue;
+            this.But3Spavka_HNA.Location = new System.Drawing.Point(703, 20);
+            this.But3Spavka_HNA.Name = "But3Spavka_HNA";
+            this.But3Spavka_HNA.Size = new System.Drawing.Size(75, 52);
+            this.But3Spavka_HNA.TabIndex = 6;
+            this.But3Spavka_HNA.Text = "Справка";
+            this.But3Spavka_HNA.UseVisualStyleBackColor = false;
+            this.But3Spavka_HNA.Click += new System.EventHandler(this.But3Spavka_HNA_Click);
             // 
-            // buttonDone_PEI
+            // But2Sohranit_HNA
             // 
-            this.buttonDone_PEI.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonDone_PEI.BackColor = System.Drawing.Color.Lime;
-            this.buttonDone_PEI.Location = new System.Drawing.Point(421, 21);
-            this.buttonDone_PEI.Name = "buttonDone_PEI";
-            this.buttonDone_PEI.Size = new System.Drawing.Size(101, 81);
-            this.buttonDone_PEI.TabIndex = 3;
-            this.buttonDone_PEI.Text = "Выполнить";
-            this.buttonDone_PEI.UseVisualStyleBackColor = false;
-            this.buttonDone_PEI.Click += new System.EventHandler(this.buttonDone_PEI_Click);
+            this.But2Sohranit_HNA.BackColor = System.Drawing.Color.RoyalBlue;
+            this.But2Sohranit_HNA.Location = new System.Drawing.Point(622, 20);
+            this.But2Sohranit_HNA.Name = "But2Sohranit_HNA";
+            this.But2Sohranit_HNA.Size = new System.Drawing.Size(75, 52);
+            this.But2Sohranit_HNA.TabIndex = 5;
+            this.But2Sohranit_HNA.Text = "Сохранить";
+            this.But2Sohranit_HNA.UseVisualStyleBackColor = false;
+            this.But2Sohranit_HNA.Click += new System.EventHandler(this.But2Sohranit_HNA_Click);
             // 
-            // buttonOpen_PEI
+            // But1Vipolnit_HNA
             // 
-            this.buttonOpen_PEI.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonOpen_PEI.BackColor = System.Drawing.Color.Plum;
-            this.buttonOpen_PEI.Location = new System.Drawing.Point(528, 21);
-            this.buttonOpen_PEI.Name = "buttonOpen_PEI";
-            this.buttonOpen_PEI.Size = new System.Drawing.Size(101, 81);
-            this.buttonOpen_PEI.TabIndex = 4;
-            this.buttonOpen_PEI.Text = "Открыть файл";
-            this.buttonOpen_PEI.UseVisualStyleBackColor = false;
-            this.buttonOpen_PEI.Click += new System.EventHandler(this.buttonOpen_PEI_Click);
+            this.But1Vipolnit_HNA.BackColor = System.Drawing.Color.ForestGreen;
+            this.But1Vipolnit_HNA.Location = new System.Drawing.Point(541, 20);
+            this.But1Vipolnit_HNA.Name = "But1Vipolnit_HNA";
+            this.But1Vipolnit_HNA.Size = new System.Drawing.Size(75, 52);
+            this.But1Vipolnit_HNA.TabIndex = 4;
+            this.But1Vipolnit_HNA.Text = "Выполнить";
+            this.But1Vipolnit_HNA.UseVisualStyleBackColor = false;
+            this.But1Vipolnit_HNA.Click += new System.EventHandler(this.But1Vipolnit_HNA_Click);
             // 
-            // buttonInfo_PEI
+            // GBoxUslovie_HNA
             // 
-            this.buttonInfo_PEI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonInfo_PEI.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.buttonInfo_PEI.Location = new System.Drawing.Point(687, 21);
-            this.buttonInfo_PEI.Name = "buttonInfo_PEI";
-            this.buttonInfo_PEI.Size = new System.Drawing.Size(101, 81);
-            this.buttonInfo_PEI.TabIndex = 5;
-            this.buttonInfo_PEI.Text = "Справка";
-            this.buttonInfo_PEI.UseVisualStyleBackColor = false;
-            this.buttonInfo_PEI.Click += new System.EventHandler(this.buttonHelp_PEI_Click);
+            this.GBoxUslovie_HNA.Controls.Add(this.Lib1Uslovie_HNA);
+            this.GBoxUslovie_HNA.Location = new System.Drawing.Point(6, 12);
+            this.GBoxUslovie_HNA.Name = "GBoxUslovie_HNA";
+            this.GBoxUslovie_HNA.Size = new System.Drawing.Size(513, 73);
+            this.GBoxUslovie_HNA.TabIndex = 2;
+            this.GBoxUslovie_HNA.TabStop = false;
+            this.GBoxUslovie_HNA.Text = "Условие";
             // 
-            // chartDiag_PEI
+            // Lib1Uslovie_HNA
             // 
-            this.chartDiag_PEI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.chartDiag_PEI.BackColor = System.Drawing.SystemColors.Menu;
+            this.Lib1Uslovie_HNA.AutoSize = true;
+            this.Lib1Uslovie_HNA.Location = new System.Drawing.Point(6, 16);
+            this.Lib1Uslovie_HNA.Name = "Lib1Uslovie_HNA";
+            this.Lib1Uslovie_HNA.Size = new System.Drawing.Size(496, 52);
+            this.Lib1Uslovie_HNA.TabIndex = 0;
+            this.Lib1Uslovie_HNA.Text = resources.GetString("Lib1Uslovie_HNA.Text");
+            this.Lib1Uslovie_HNA.Click += new System.EventHandler(this.Lib1Uslovie_HNA_Click);
+            // 
+            // ChartTableGraf_HNA
+            // 
             chartArea3.Name = "ChartArea1";
-            this.chartDiag_PEI.ChartAreas.Add(chartArea3);
+            this.ChartTableGraf_HNA.ChartAreas.Add(chartArea3);
+            this.ChartTableGraf_HNA.Dock = System.Windows.Forms.DockStyle.Fill;
             legend3.Name = "Legend1";
-            this.chartDiag_PEI.Legends.Add(legend3);
-            this.chartDiag_PEI.Location = new System.Drawing.Point(156, 143);
-            this.chartDiag_PEI.Name = "chartDiag_PEI";
-            this.chartDiag_PEI.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            this.ChartTableGraf_HNA.Legends.Add(legend3);
+            this.ChartTableGraf_HNA.Location = new System.Drawing.Point(200, 97);
+            this.ChartTableGraf_HNA.Name = "ChartTableGraf_HNA";
             series3.ChartArea = "ChartArea1";
-            series3.IsVisibleInLegend = false;
             series3.Legend = "Legend1";
             series3.Name = "Series1";
-            series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            this.chartDiag_PEI.Series.Add(series3);
-            this.chartDiag_PEI.Size = new System.Drawing.Size(632, 370);
-            this.chartDiag_PEI.TabIndex = 6;
-            this.chartDiag_PEI.Text = "chart1";
+            this.ChartTableGraf_HNA.Series.Add(series3);
+            this.ChartTableGraf_HNA.Size = new System.Drawing.Size(600, 353);
+            this.ChartTableGraf_HNA.TabIndex = 8;
+            this.ChartTableGraf_HNA.Text = "ChartColonka_HNA";
             // 
-            // textBox1
+            // DGridViewTable_HNA
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox1.Location = new System.Drawing.Point(6, 18);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(391, 99);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Прочитать данные из файла. Вывести в dataGridView. Дан список из чисел. Вывести в" +
-    "се числа, меньше 0. Построить диаграмму по этим значениям.\r\n";
+            this.DGridViewTable_HNA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGridViewTable_HNA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnX_HNA});
+            this.DGridViewTable_HNA.Location = new System.Drawing.Point(13, 20);
+            this.DGridViewTable_HNA.Name = "DGridViewTable_HNA";
+            this.DGridViewTable_HNA.Size = new System.Drawing.Size(172, 321);
+            this.DGridViewTable_HNA.TabIndex = 0;
             // 
-            // FormMain
+            // ColumnX_HNA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ColumnX_HNA.HeaderText = "X";
+            this.ColumnX_HNA.Name = "ColumnX_HNA";
+            this.ColumnX_HNA.ReadOnly = true;
+            // 
+            // FormMain_HNA
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 525);
-            this.Controls.Add(this.chartDiag_PEI);
-            this.Controls.Add(this.buttonInfo_PEI);
-            this.Controls.Add(this.buttonOpen_PEI);
-            this.Controls.Add(this.buttonDone_PEI);
-            this.Controls.Add(this.groupBoxTask_PEI);
-            this.Controls.Add(this.groupBoxOutput_PEI);
-            this.Name = "FormMain";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ChartTableGraf_HNA);
+            this.Controls.Add(this.DBox2Vivod_HNA);
+            this.Controls.Add(this.GBoxFon_HNA);
+            this.Name = "FormMain_HNA";
             this.Text = "Спринт 6 | Таск 5 | Вариант 8 | Корнев Р.М.";
-            this.groupBoxOutput_PEI.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_PEI)).EndInit();
-            this.groupBoxTask_PEI.ResumeLayout(false);
-            this.groupBoxTask_PEI.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDiag_PEI)).EndInit();
+            this.DBox2Vivod_HNA.ResumeLayout(false);
+            this.GBoxFon_HNA.ResumeLayout(false);
+            this.GBoxUslovie_HNA.ResumeLayout(false);
+            this.GBoxUslovie_HNA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartTableGraf_HNA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGridViewTable_HNA)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBoxOutput_PEI;
-        private System.Windows.Forms.GroupBox groupBoxTask_PEI;
-        private System.Windows.Forms.Button buttonDone_PEI;
-        private System.Windows.Forms.Button buttonOpen_PEI;
-        private System.Windows.Forms.Button buttonInfo_PEI;
-        private System.Windows.Forms.DataGridView dataGrid_PEI;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartDiag_PEI;
-        private System.Windows.Forms.TextBox textBox1;
+
+        private System.Windows.Forms.GroupBox DBox2Vivod_HNA;
+        private System.Windows.Forms.GroupBox GBoxFon_HNA;
+        private System.Windows.Forms.Button But3Spavka_HNA;
+        private System.Windows.Forms.Button But2Sohranit_HNA;
+        private System.Windows.Forms.Button But1Vipolnit_HNA;
+        private System.Windows.Forms.GroupBox GBoxUslovie_HNA;
+        private System.Windows.Forms.Label Lib1Uslovie_HNA;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ChartTableGraf_HNA;
+        private System.Windows.Forms.DataGridView DGridViewTable_HNA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnX_HNA;
     }
 }

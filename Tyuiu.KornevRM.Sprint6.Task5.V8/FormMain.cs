@@ -1,49 +1,54 @@
 using Tyuiu.KornevRM.Sprint6.Task5.V8.Lib;
 namespace Tyuiu.KornevRM.Sprint6.Task5.V8
 {
-    public partial class FormMain : Form
+   public partial class FormMain_HNA : Form
     {
-        public FormMain()
+        public FormMain_HNA()
         {
             InitializeComponent();
         }
 
         DataService ds = new DataService();
-        string path = @"C:\Users\iLLum\source\repos\Tyuiu.KornevRM.Sprint6\Tyuiu.KornevRM.Sprint6.Task5.V8\bin\DebugInPutFileTask5V8.txt";
+        private static readonly string path = @"C:\DataSprint5\InPutFileTask5V8.txt";
 
-        private void buttonDone_PEI_Click(object sender, EventArgs e)
+        private void Lib1Uslovie_HNA_Click(object sender, EventArgs e)
         {
-            dataGrid_PEI.ColumnCount = 2;
-            dataGrid_PEI.Columns[0].Width = 20;
-            dataGrid_PEI.Columns[1].Width = 50;
 
-            this.chartDiag_PEI.ChartAreas[0].AxisX.Title = "Ось X";
-            this.chartDiag_PEI.ChartAreas[0].AxisY.Title = "Ось Y";
+        }
 
-            chartDiag_PEI.Series[0].Points.Clear();
+        private void But1Vipolnit_HNA_Click(object sender, EventArgs e)
+        {
+            DGridViewTable_HNA.ColumnCount = 2;
+            DGridViewTable_HNA.Columns[0].Width = 20;
+            DGridViewTable_HNA.Columns[1].Width = 50;
 
-            double[] array = new double[ds.len];
-            array = ds.LoadFromDataFile(path);
+            this.ChartTableGraf_HNA.ChartAreas[0].AxisX.Title = "Ось X";
+            this.ChartTableGraf_HNA.ChartAreas[0].AxisY.Title = "Ось Y";
 
-            for (int i = 0; i < array.Length; i++)
+            ChartTableGraf_HNA.Series[0].Points.Clear();
+
+            double[] numArray = new double[ds.len];
+            numArray = ds.LoadFromDataFile(path);
+
+            for (int i = 0; i < numArray.Length; i++)
             {
-                dataGrid_PEI.Rows.Add(Convert.ToString(i), Convert.ToString(array[i]));
-                chartDiag_PEI.Series[0].Points.AddXY(i, array[i]);
+                DGridViewTable_HNA.Rows.Add(Convert.ToString(i), Convert.ToString(numArray[i]));
+                ChartTableGraf_HNA.Series[0].Points.AddXY(i, numArray[i]);
             }
-
         }
 
-        private void buttonHelp_PEI_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Таск 5 выполнил студент группы ИСПб-24-1 Корнев Руслан Максимович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void buttonOpen_PEI_Click(object sender, EventArgs e)
+        private void But2Sohranit_HNA_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process txt = new System.Diagnostics.Process();
             txt.StartInfo.FileName = "notepad.exe";
             txt.StartInfo.Arguments = path;
             txt.Start();
+        }
+
+        private void But3Spavka_HNA_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Такс 5 выполнил студент группы ИСПб-24-1 Корнев Руслан Максимович", "Справка");
+
         }
     }
 }

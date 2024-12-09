@@ -6,25 +6,31 @@ namespace Tyuiu.KornevRM.Sprint6.Task5.V8.Lib
         public int len = 0;
         public double[] LoadFromDataFile(string path)
         {
-            using (StreamReader file = new StreamReader(path))
+            using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                while ((line = file.ReadLine()) != null) len++;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    len++;
+                }
+
             }
 
-            double[] array = new double[len];
+            double[] numsArray = new double[len];
             int index = 0;
 
-            using (StreamReader file = new StreamReader(path))
+            using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                while ((line = file.ReadLine()) != null)
+                while ((line = reader.ReadLine()) != null)
                 {
-                    if (Convert.ToDouble(line) < 0) array[index] = Math.Round(Convert.ToDouble(line), 2);
+                    numsArray[index] = Convert.ToDouble(line);
                     index++;
                 }
             }
-            return array;
+            numsArray = numsArray.Where(val => val < 0).ToArray();
+
+            return numsArray;
         }
     }
 }
