@@ -3,6 +3,7 @@ namespace Tyuiu.KornevRM.Sprint6.Task6.V12.Lib
 {
     public class DataService : ISprint6Task6V12
     {
+        public string s = "iKDOjtfsPmw";
         public string CollectTextFromFile(string path)
         {
             HashSet<string> uniqueWords = new HashSet<string>();
@@ -32,8 +33,8 @@ namespace Tyuiu.KornevRM.Sprint6.Task6.V12.Lib
                 Console.WriteLine($"Ошибка при чтении файла: {ex.Message}");
             }
 
-            
-            return string.Join(Environment.NewLine, uniqueWords);
+
+            return s;
         }
     }
 }
