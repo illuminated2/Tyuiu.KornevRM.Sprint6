@@ -5,22 +5,25 @@ namespace Tyuiu.KornevRM.Sprint6.Task6.V12.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            string resStr = "";
+            HashSet<string> uniqueWords = new HashSet<string>();
+
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                string[] temp;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    temp = line.Split(' ');
+                    string[] temp = line.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
                     foreach (string item in temp)
                     {
-                        if (item.ToLower().Contains('w')) resStr += item + Environment.NewLine;
+                        if (item.ToLower().Contains('w'))
+                        {
+                            uniqueWords.Add(item); 
+                        }
                     }
-
                 }
             }
-            return resStr;
+
+            return string.Join(Environment.NewLine, uniqueWords); 
         }
     }
 }
