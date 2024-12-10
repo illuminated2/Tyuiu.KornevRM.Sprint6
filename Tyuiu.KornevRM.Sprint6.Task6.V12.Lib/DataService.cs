@@ -7,23 +7,33 @@ namespace Tyuiu.KornevRM.Sprint6.Task6.V12.Lib
         {
             HashSet<string> uniqueWords = new HashSet<string>();
 
-            using (StreamReader reader = new StreamReader(path))
+            try
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
+                using (StreamReader reader = new StreamReader(path))
                 {
-                    string[] temp = line.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
-                    foreach (string item in temp)
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
                     {
-                        if (item.ToLower().Contains('w'))
+                       
+                        string[] temp = line.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+                        foreach (string item in temp)
                         {
-                            uniqueWords.Add(item); 
+                           
+                            if (item.IndexOf('w', StringComparison.OrdinalIgnoreCase) >= 0)
+                            {
+                                uniqueWords.Add(item); 
+                            }
                         }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка при чтении файла: {ex.Message}");
+            }
 
-            return string.Join(Environment.NewLine, uniqueWords); 
+            
+            return string.Join(Environment.NewLine, uniqueWords);
         }
     }
 }
