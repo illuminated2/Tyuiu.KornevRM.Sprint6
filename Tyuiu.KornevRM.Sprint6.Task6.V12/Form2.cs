@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tyuiu.KornevRM.Sprint6.Task6.V11
+namespace Tyuiu.KornevRM.Sprint6.Task6.V12
 {
     public partial class FormAbout : Form
     {
         public FormAbout()
         {
             InitializeComponent();
+        }
+
+        private void buttonOK_PAO_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

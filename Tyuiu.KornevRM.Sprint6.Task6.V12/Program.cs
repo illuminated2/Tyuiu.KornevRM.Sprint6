@@ -1,4 +1,4 @@
-namespace Tyuiu.KornevRM.Sprint6.Task6.V11
+namespace Tyuiu.KornevRM.Sprint6.Task6.V12
 {
     internal static class Program
     {
@@ -8,8 +8,9 @@ namespace Tyuiu.KornevRM.Sprint6.Task6.V11
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
             Application.Run(new FormMain());
         }
     }
