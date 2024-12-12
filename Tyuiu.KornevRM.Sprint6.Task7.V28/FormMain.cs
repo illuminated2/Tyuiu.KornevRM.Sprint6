@@ -43,7 +43,7 @@ namespace Tyuiu.KornevRM.Sprint6.Task7.V28
 
         }
 
-        private void groupBoxCondition_DDA_Enter(object sender, EventArgs e)
+        private void groupBoxCondition_KRM_Enter(object sender, EventArgs e)
         {
 
         }
@@ -53,12 +53,12 @@ namespace Tyuiu.KornevRM.Sprint6.Task7.V28
 
         }
 
-        private void panelOutPut_DDA_Paint(object sender, PaintEventArgs e)
+        private void panelOutPut_KRM_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void buttonOpenFile_DDA_Click(object sender, EventArgs e)
+        private void buttonOpenFile_KRM_Click(object sender, EventArgs e)
         {
             openFileDialog_DDA.ShowDialog();
             openFilePath = openFileDialog_DDA.FileName;
@@ -106,7 +106,7 @@ namespace Tyuiu.KornevRM.Sprint6.Task7.V28
 
 
 
-        private void buttonDone_DDA_Click(object sender, EventArgs e)
+        private void buttonDone_KRM_Click(object sender, EventArgs e)
         {
             int[,] arrayValues = new int[rows, columns];
             arrayValues = ds.GetMatrix(openFilePath);
@@ -122,7 +122,7 @@ namespace Tyuiu.KornevRM.Sprint6.Task7.V28
             buttonSaveFile_DDA.Enabled = true;
         }
 
-        private void buttonSaveFile_DDA_Click(object sender, EventArgs e)
+        private void buttonSaveFile_KRM_Click(object sender, EventArgs e)
         {
             saveFileDialogMatrix_DDA.FileName = "OutPutFileTask7.csv";
             saveFileDialogMatrix_DDA.InitialDirectory = Directory.GetCurrentDirectory();
@@ -161,12 +161,12 @@ namespace Tyuiu.KornevRM.Sprint6.Task7.V28
             }
         }
 
-        private void openFileDialog_DDA_FileOk(object sender, CancelEventArgs e)
+        private void openFileDialog_KRM_FileOk(object sender, CancelEventArgs e)
         {
 
         }
 
-        private void buttonInfo_DDA_Click(object sender, EventArgs e)
+        private void buttonInfo_KRM_Click(object sender, EventArgs e)
         {
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();

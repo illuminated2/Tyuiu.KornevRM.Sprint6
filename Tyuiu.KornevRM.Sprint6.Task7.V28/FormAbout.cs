@@ -17,12 +17,12 @@ namespace Tyuiu.KornevRM.Sprint6.Task7.V28
             InitializeComponent();
         }
 
-        private void pictureBoxAvatar_DDA_Click(object sender, EventArgs e)
+        private void pictureBoxAvatar_KRM_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonOk_DDA_Click(object sender, EventArgs e)
+        private void buttonOk_KRM_Click(object sender, EventArgs e)
         {
             this.Close();
         }
